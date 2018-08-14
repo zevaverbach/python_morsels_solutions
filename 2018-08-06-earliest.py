@@ -17,7 +17,7 @@ class Date:
 
 
 def get_earliest(*date_strings):
-    dates = [Date(date_string) for date_string in date_strings]
+    dates = map(Date, date_strings)
     return str(min(dates))
 
 
